@@ -1,44 +1,23 @@
-DOMSelectors = {
-  form: document.getElementById("form"),
-  nameInput: document.getElementById("name-input"),
-  titleInput: document.getElementById("title-input"),
-  imageInput: document.getElementById("image-input"),
-  objects: document.getElementById("objects"),
+const DOMSelectors = {
+  button: document.getElementById("btn"),
+  text: document.getElementById("text"),
+  point: document.querySelectorAll(".point"),
+  pt1: document.querySelector("#pt1"),
+  box: document.getElementById("big-black-box"),
 };
-DOMSelectors.form.addEventListener("submit", function () {
-  event.preventDefault();
-  addNewElement();
-  setRemoveButtons();
-  resetInputs();
+
+function blackText(back, note) {
+  back.style.backgroundColor = "purple";
+  note.textContent = "This is now a purple box.";
+  note.style.fontSize = "60px";
+  note.style.color = "blue";
+}
+
+DOMSelectors.button.addEventListener("click", function () {
+  blackText(DOMSelectors.box, DOMSelectors.text);
 });
 
-function addNewElement() {
-  p = DOMSelectors.nameInput.value;
-  h2 = DOMSelectors.titleInput.value;
-  image = DOMSelectors.imageInput.value;
-  DOMSelectors.objects.insertAdjacentHTML(
-    "afterbegin",
-    `<div class="object">
-                <h2>${h2}</h2>
-                <p>${p}</p>
-                <img class="object-image" src="${image}">
-                <br>
-                <button class="remove-button">Remove</button>
-        </div>`
-  );
+function changeLi() {
+  DOMSelectors.point.forEach((show) => console.log(show));
 }
-
-function setRemoveButtons() {
-  const buttons = document.querySelectorAll(".remove-button");
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      this.parentElement.remove();
-    });
-  });
-}
-
-function resetInputs() {
-  DOMSelectors.nameInput.value = "";
-  DOMSelectors.titleInput.value = "";
-  DOMSelectors.imageInput.value = "";
-}
+changeLi();

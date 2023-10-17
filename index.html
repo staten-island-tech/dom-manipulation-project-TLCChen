@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,23 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
 </head>
-<form id="form">
-    <label for="title-input">Name: </label>
-    <input id="title-input">
-    <br>
-    <label for="name-input">Artist: </label>
-    <input id="name-input">
-    <br>
-    <label for="image-input">Image: </label>
-    <input id="image-input">
-    <br>
-    <button type="submit" id="submit">Enter</button>
-</form>
-    <div id="objects"></div>
+<body>
+    <div id="big-black-box">
+        <p id="text">This is a black box.</p>
+
+        <button type="button" id="btn">Click Me!</button>
+        <ul>
+            <li class="point">1</li>
+            <li class="point">2</li>
+            <li class="point" id="pt1">3</li>
+        </ul>
+    </div>
+
+    <script src="index.js"></script>
 </body>
-<script src="app.js"></script>
 </html>

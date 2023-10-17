@@ -1,32 +1,5 @@
-body {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(224, 240, 255);
-}
-.object {
-    margin: auto;
-    text-align: center;
-    background-color: rgb(166, 216, 233);
-    border: 2px black solid;
-    border-radius: 10px;
-    width: 50%;
-    margin-bottom: 20px;
-}
-.object-image {
-    width: 90%;
-}
-input {
-    margin-bottom: 10px;
-}
-#submit {
-    margin-bottom: 20px;
-}
-.remove-button {
-    width: 20%;
-    height: 40px;
-    background-color: red;
-    margin-bottom: 20px;
-    color: white;
-    font-weight: 900;
-    font-size: 1rem;
+#big-black-box{
+    background-color: rgb(26, 187, 53);
+    width: 100vw;
+    height: 100vh;
 }
