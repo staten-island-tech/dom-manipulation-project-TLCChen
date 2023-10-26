@@ -10,7 +10,7 @@ html, body, *{
     display: flex;
     width: 80vw;
     height: auto;
-    border: rgb(75, 213, 231) solid 1rem;
+    border: rgb(255, 255, 255) solid 1rem;
     margin: 10rem auto;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -25,7 +25,37 @@ html, body, *{
     border: rgb(23, 170, 109) solid .5rem;
 }
 
+.fontSize{
+    font-size: 2rem;
+}
+
+.animal{
+    font-size: 1.25rem;
+    margin: 1rem 1rem 0rem;
+}
+
+.buttonClass{
+    font-size: 1.25rem;
+    margin: 0rem 1rem 1rem;
+}
+
+.text1{
+    font-size: 1.5rem;
+    margin: 1rem 1rem 1rem;
+}
+
+.text2{
+    font-size: 1.5rem;
+    margin: 1rem 1rem 1rem;
+}
+
+.btn{
+    background-color: rgb(188, 134, 219);
+    color: rgb(0, 0, 0);
+}
+
 img{
     width: 80%;
     height: auto;
 }
+
