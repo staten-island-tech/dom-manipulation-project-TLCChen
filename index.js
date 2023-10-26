@@ -1,15 +1,13 @@
 const DOMSelectors = {
   button: document.querySelector(".buttonClass"),
-  remove: document.querySelector(".btn"),
+  removing: document.querySelector(".btn"),
   text: document.getElementById("text"),
-  point: document.querySelectorAll(".point"),
-  pt1: document.querySelector("#pt1"),
   box: document.querySelector(".box"),
   input: document.querySelector(".text1"),
   image: document.querySelector(".text2"),
-  card: document.querySelectorAll(".card")
+  card: document.querySelectorAll(".card"),
 };
-function click(){
+function click() {
   DOMSelectors.button.addEventListener("click", function (stop) {
     black(DOMSelectors.box);
     stop.preventDefault();
@@ -19,8 +17,6 @@ function click(){
   });
 }
 
-
-
 function blackText(back, note) {
   back.style.backgroundColor = "purple";
   note.textContent = "This is now a purple box.";
@@ -28,16 +24,16 @@ function blackText(back, note) {
   note.style.color = "blue";
 }
 
-function black(color){
-  color.style="border: .2rem solid black"
+function black(color) {
+  color.style = "border: .2rem solid black";
 }
 
 function clear() {
   DOMSelectors.input.value = "";
   DOMSelectors.image.value = "";
-} 
+}
 
-function create(){
+function create() {
   let bigBox = document.querySelector(".box");
   bigBox.insertAdjacentHTML(
     "beforeend",
@@ -51,9 +47,18 @@ function create(){
 
 click();
 
-function disappear(){
-  console.log("I am going to be removed.")
+function disappear() {
+  console.log("I am going to be removed.");
 }
-DOMSelectors.remove.addEventListener("click", function(){
-  console.log("Removed")
+document.querySelector(".btn").addEventListener("click", function () {
+  cat = DOMSelectors.card;
+  cat.remove();
 });
+
+document.querySelectorAll(".btn").forEach((call) =>
+  call.addEventListener("click", function () {
+    console.log("Removed");
+  })
+);
+
+function deleteMan() {}
