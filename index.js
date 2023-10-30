@@ -25,7 +25,8 @@ function blackText(back, note) {
 }
 
 function black(color) {
-  color.style = "border: .2rem solid black";
+  color.style = "border: .01rem solid black";
+  color.style.opacity = "1";
 }
 
 function clear() {
