@@ -5,9 +5,14 @@ html, body, *{
     font-size: 10px;
 }
 
+body{
+    font-family: 'Merriweather', serif;
+}
+
 .title{
     font-size: 5rem;
     text-align: center;
+    animation: header infinite 2s;
 }
 
 .box{
@@ -39,28 +44,77 @@ html, body, *{
     margin: 1rem 1rem 0rem;
 }
 
-.buttonClass{
-    font-size: 1.25rem;
-    margin: 0rem 1rem 1rem;
+.buttons{
+    text-align: center;
 }
 
+.buttonClass{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0rem 1rem 1rem;
+    font-family: 'Merriweather', serif;
+    transition: all 1s;
+}
+
+.buttonClass:hover{
+    transform: scale(1.5);
+}
+
+.space{
+    margin: 1rem auto;
+    text-align: center;
+}
 .text1{
     font-size: 1.5rem;
-    margin: 1rem 1rem 1rem;
+    font-family: 'Merriweather', serif;
 }
 
 .text2{
     font-size: 1.5rem;
-    margin: 1rem 1rem 1rem;
+    font-family: 'Merriweather', serif;
 }
 
 .btn{
     background-color: rgb(188, 134, 219);
-    color: rgb(0, 0, 0);
+    color: rgb(21, 44, 3);
+    transition: all 1s;
+}
+
+.btn:hover{
+    transform: scale(1.5);
 }
 
 img{
     width: 80%;
-    height: auto;
+    height: 15rem;
 }
 
+@keyframes header {
+    0%{
+      color: rgb(242, 243, 202);
+    }
+    12.5%{
+      color: rgb(240, 241, 159);
+    }
+    25%{
+      color: rgb(252, 187, 102);
+    }
+    37.5%{
+      color: rgb(245, 161, 52);
+    }
+    50%{
+      color: rgb(185, 107, 4);
+    }
+    62.5%{
+      color: rgb(245, 161, 52);
+    }
+    75%{
+      color: rgb(252, 187, 102);
+    }
+    87.5%{
+      color: rgb(241, 206, 159);
+    }
+    100%{
+      color: rgb(247, 222, 189)
+    }
+}
