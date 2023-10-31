@@ -10,8 +10,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100vw;
     background-color: #7475D1;
-
-    background-image:var()  
+    background-image: url("../image/37090942354.png");
     width: 100vw;
     height: 100vh;
 }
@@ -35,7 +34,6 @@ body{
 }
 
 .card{
-    font-size: 100rem;
     width: 27%;
     height: auto;
     margin: 1rem auto;
@@ -46,6 +44,7 @@ body{
 
 .fontSize{
     font-size: 2rem;
+    background-color: aqua;
 }
 
 .animal{
@@ -66,7 +65,7 @@ body{
 }
 
 .buttonClass:hover{
-    transform: scale(10);
+    transform: scale(5);
 }
 
 .space{

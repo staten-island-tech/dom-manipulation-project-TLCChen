@@ -25,8 +25,10 @@ function blackText(back, note) {
 }
 
 function black(color) {
-  color.style = "border: .01rem solid black";
-  color.style.opacity = "1";
+  if (DOMSelectors.input.value !== "" && DOMSelectors.image.value !== "") {
+    color.style = "border: .01rem solid black";
+    color.style.opacity = "1";
+  }
 }
 
 function clear() {
@@ -36,14 +38,17 @@ function clear() {
 
 function create() {
   let bigBox = document.querySelector(".box");
-  bigBox.insertAdjacentHTML(
-    "beforeend",
-    `<div class="card">
-      <h2 class="fontSize">${DOMSelectors.input.value}</h2>
-      <img src="${DOMSelectors.image.value}" alt="cat">
-      <button class="btn">Remove</button>
-    </div>`
-  );
+  if (DOMSelectors.input.value !== "" && DOMSelectors.image.value !== "") {
+    bigBox.insertAdjacentHTML(
+      "beforeend",
+      `<div class="card">
+        <h2 class="fontSize">${DOMSelectors.input.value}</h2>
+        <img src="${DOMSelectors.image.value}" alt="cat">
+        <button class="btn">Remove</button>
+      </div>`
+    );
+  }
+
   // bigBox.lastChild.addEventListener("click", function () {
   //   this.remove();
   // });
